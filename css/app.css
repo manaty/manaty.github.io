@@ -6,7 +6,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 3em;
 }
 
 h1.icon {
@@ -390,7 +390,7 @@ ul.navigation li a {
     box-shadow: 1px 2px 15px 7px rgba(0, 0, 0, 0.21);
     z-index: 1px;
     overflow: auto;
-    height: 300px;
+    height: auto;
     width: 70%;
     position: relative;
     margin-top: 30px;
@@ -454,6 +454,13 @@ ul.navigation li a {
     /*can be anything*/
     position: relative;
     margin-bottom: 40px;
+}
+
+.clients .logo-last-row {
+    height: 150px;
+    /*can be anything*/
+    position: relative;
+    margin-bottom: 10px;
 }
 
 .clients .logo img {
@@ -584,13 +591,24 @@ footer .center img {
 
 /** FORMS **/
 
+
+.contact-info-row {
+    height: 30px;    
+}
+
+.contact-info {
+    font-size: 1em;
+    line-height: 1em;
+    padding-top: 10px;
+}
+
 .contact-form {
     width: 70%;
     margin: auto;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    padding-top: 10px;
 }
 
 .form-control {
@@ -781,6 +799,10 @@ overflow: hidden;
     padding-left: 20px;
 }
 
+.help {
+    margin-bottom: 80px;
+}
+
 .trust-header-container {
     vertical-align: top;
     text-align: center;
@@ -918,6 +940,10 @@ overflow: hidden;
     ul#expert-list li .expert-list-description-container.active {
         opacity: 1;
         z-index: 4;
+    }
+
+    .trusted {
+        margin: 60px 0;
     }
 }
 
