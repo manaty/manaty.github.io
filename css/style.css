@@ -1,0 +1,520 @@
+
+
+h1, h2, h3, h4, h5 {
+    font-family: "Oswald";
+    font-weight: 500;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1.icon {
+    font-size: 60px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    position: relative;
+}
+
+small {
+    font-size: 90%;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300i;
+}
+
+p.padded {
+    padding: 20px;
+}
+
+p.center {
+    text-align: center;
+}
+
+.medium {
+    font-size: 20px;
+}
+
+/** JUMBOTRON **/
+
+.jumbotron h1 {
+    font-size: 3.5em;
+}
+
+.jumbotron .subheader {
+    font-size: 1.2em;
+}
+
+.jumbotron {
+    position: relative;
+    color: white;
+    background: url(../images/header_home.jpg ) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    ;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    text-shadow: 0px 1px 3px #000000;
+}
+
+.jumbotron .text-banner-container {
+    margin-top: 10em;
+}
+
+.header-navigation {
+    height: 162px;
+    padding: 20px;
+    top: 0;
+    position: absolute !important;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    border-bottom: solid thin rgba(14, 89, 85, 0);
+}
+
+.header-navigation .logo img {
+    width: 200px;
+}
+
+.jumbotron .text-banner-container {
+    margin-top: 10em;
+}
+
+
+.contact-container {
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-bottom: 10px;
+
+}
+
+.btn-custom {
+    background-color: #0e5955;
+}
+.btn-custom:hover {
+    background-color: #078d86;
+}
+
+
+.primary {
+    background-color: #0e5955;
+    color: white;
+    min-width: 120px;
+    font-family: "Oswald";
+    font-size: 18px;
+    padding: 10px;
+    border: 0;
+}
+
+.send-btn {
+    width: 200px;
+}
+
+
+/** SOCIAL ICONS **/
+
+ul.social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.social li {
+    float: left;
+    margin-right: 10px;
+}
+
+ul.social li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul.social li a img {
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(0.8);
+    /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(0.8);
+    /* Microsoft Edge and Firefox 35+ */
+}
+
+ul.social li a:hover img {
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
+/** CONTAINER **/
+
+p {
+    line-height: 30px;
+}
+
+.container-center {
+    width: 60%;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-container {
+    margin-bottom: 20px;
+}
+
+.padded-top {
+    padding-top: 30px;
+}
+
+.padded-right {
+    padding-right: 30px;
+}
+
+.padded-big-top {
+    padding-top: 60px;
+}
+
+/** TYPOGRAPHY  **/
+
+.white {
+    color: white;
+}
+
+.yellow {
+    color: #f1ea29;
+}
+
+.orange {
+    color: #E3742A;
+}
+
+.darkgreen {
+    color: #105050;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/** SERVICES **/
+
+.services {
+    margin-top: 60px;
+}
+
+.services, .clients, .request, .globe, .figures, .services-items {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.services .row, .request .row, .globe .row, .figures .row, .services-items .row {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.clients {
+    margin-top: 10px;
+}
+
+/** ROW BORDERED **/
+
+/*.row {
+    position: relative;
+}*/
+.row .item {
+    text-align: center;
+    z-index: 1px;
+    margin-top: 30px;
+}
+
+.figures .abs{
+
+    position: absolute;
+    top: -120px;
+    width: 100%;
+    left:0;
+    color: #666666;
+
+}
+
+.figures .bordered{
+
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    padding:20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 2px 15px 7px rgba(0,0,0,0.21);
+    -moz-box-shadow: 1px 2px 15px 7px rgba(0,0,0,0.21);
+    box-shadow: 1px 2px 15px 7px rgba(0,0,0,0.21);
+    z-index: 1px;
+    overflow: auto;
+    height: 220px;
+    position: relative;
+    margin-top:60px;
+}
+
+.figures .bordered .content{
+    position: relative;
+    bottom: 0px;
+
+}
+.relative{
+    position: relative;
+    z-index: 1;
+}
+.bg-green{
+    background-color:#0e5955;
+    width: 100%;
+}
+
+.services-item-bg{
+    position: absolute;
+    background-color:#0e5955;
+    width: 100%;
+    height: 300px;
+    top: 180px;
+    z-index: 0;
+}
+
+.center img{
+    display: block;
+    margin: auto;
+    max-width: 40%;
+}
+
+/** SERVICES-ICONS **/
+
+.services-icons {
+    text-align: center;
+    min-height: 225px;
+}
+
+.service-icons-container {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 5px;
+    position: relative;
+    width: 190px;
+}
+
+.service-icons-container .icon {
+    padding-top: 40px;
+    border-radius: 150px;
+    background-color: #105050;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    -webkit-transition: height .2s linear, width .2s linear, padding-top .2s linear;
+    -moz-transition: height .2s linear, width .2s linear, padding-top .2s linear;
+    -o-transition: height .2s linear, width .2s linear, padding-top .2s linear;
+    transition: height .2s linear, width .2s linear, padding-top .2s linear;
+}
+
+.service-icons-container .icon:hover, .service-icons-container .icon.active {
+    background-color: #E3742A;
+}
+
+.service-icons-container:after {
+    content: " ";
+    background: url(../images/triangle.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 35%;
+    opacity: 0;
+}
+
+.service-icons-container.active:after {
+    opacity: 1;
+}
+
+.service-icons-container .icon img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.service-icons-container h1 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #105050;
+}
+
+.service-icons-description-container {
+    background-color: #104F4B;
+    -webkit-transition-delay: left 0.1s ease;
+    /* Safari */
+    transition: opacity 0.1s ease;
+    opacity: 0;
+    padding: 20px;
+    color: white;
+    min-height: 0px
+}
+
+.service-icons-description-container .row {
+    margin: 0px;
+}
+
+.service-icons-description-container.active {
+    opacity: 1;
+    min-height: 200px;
+    transition: min-height 0.5s ease;
+}
+
+.service-icons-description-container.active ul {
+    list-style: none;
+    padding: 0px;
+}
+
+
+/** GLOBE **/
+
+.globe {
+    position: relative;
+    padding: 60px 60px 120px 60px;
+    color: white;
+    background: url("../images/world_map.png") no-repeat;
+    background-size: contain;
+    background-color: #0e5955;
+
+}
+
+.globe .text-content {
+    position: relative;
+    z-index: 100;
+}
+
+.globe img.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    z-index: 0;
+}
+
+.globe .image-container-center img {
+    height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+/** PROCESS **/
+
+.additional-help {
+    padding-left: 20px;
+}
+
+.help {
+    margin-bottom: 40px;
+}
+
+.trust-header-container {
+    vertical-align: top;
+    text-align: center;
+    margin: 0 5px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+/** CLIENTS SECTION **/
+.clients .logo {
+    height: 150px;
+    /*can be anything*/
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.clients .logo-last-row {
+    height: 150px;
+    /*can be anything*/
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.clients .logo img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+}
+
+/** CONTACT SECTION **/
+
+.contactus {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/** FORMS **/
+
+
+.contact-info-row {
+    height: 30px;
+}
+
+.contact-info {
+    font-size: 1em;
+    line-height: 1em;
+    padding-top: 10px;
+}
+
+.contact-form {
+    width: 70%;
+    margin: auto;
+}
+
+.form-group {
+    padding-top: 10px;
+}
+
+.form-control {
+    border-radius: 1px;
+}
+
+/**FOOTER **/
+
+footer {
+    background-color: black;
+    height: 50px;
+    color: white;
+    font-size: 1.3vw;
+}
+
+.footer-content {
+    padding-top: 10px;
+}
