@@ -1,4 +1,89 @@
+.padded-big-top {
+    padding-top: 0;
+}
 
+.clients {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.clients .logo {
+    height: 100px;
+    /*can be anything*/
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.services-items {
+    margin-bottom: 10px;
+}
+
+.globe-container {
+    position: relative;
+    padding: 0;
+}
+
+.globe {
+    position: relative;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    background: url("../images/world_map.png") no-repeat;
+    background-size: contain;
+    background-color: #0e5955;
+}
+
+footer {
+    background-color: black;
+    height: 50px;
+    color: white;
+    font-size: 10px;
+}
+
+
+@media (min-width: 576px) {
+
+    .padded-big-top {
+        padding-top: 60px;
+    }
+
+    .clients {
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .clients .logo {
+        height: 150px;
+        /*can be anything*/
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .services-items {
+        margin-bottom: 140px;
+    }
+
+    .globe-container {
+        position: relative;
+        padding: 40px 0;
+    }
+
+    .globe {
+        position: relative;
+        padding: 170px 60px 120px 60px;
+        color: white;
+        background: url("../images/world_map.png") no-repeat;
+        background-size: contain;
+        background-color: #0e5955;
+
+    }
+
+    footer {
+        background-color: black;
+        height: 50px;
+        color: white;
+        font-size: 1em;
+    }
+}
 
 h1, h2, h3, h4, h5 {
     font-family: "Oswald";
@@ -189,9 +274,6 @@ p {
     padding-right: 30px;
 }
 
-.padded-big-top {
-    padding-top: 60px;
-}
 
 /** TYPOGRAPHY  **/
 
@@ -221,19 +303,16 @@ p {
     margin-top: 60px;
 }
 
-.services, .clients, .request, .globe, .services-items {
+.services, .request, .globe{
     position: relative;
     margin-bottom: 20px;
 }
 
-.services .row, .request .row, .globe .row, .figures .row, .services-items .row {
+.services .row, .request .row, .services-items .row {
     margin-top: 70px;
     margin-bottom: 20px;
 }
 
-.clients {
-    margin-top: 10px;
-}
 
 /** ROW BORDERED **/
 
@@ -246,28 +325,74 @@ p {
     margin-top: 30px;
 }
 
-.figures {
-    border: 1px solid #000000;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 0;
+/** TRUST **/
 
-}
-
-.figures .abs{
+.trust {
     position: absolute;
-    /*top: -250px;*/
-    /*margin-top: 100px;*/
-    margin-top: 10px;
-    margin-left: 0;
+    top: -150px;
+    left: 0;
     width: 100%;
-    /*left:0;*/
+    z-index: 120;
     color: #666666;
-    background-color: grey;
 }
 
-.figures .bordered{
+.trust .custom-padding-bottom {
+    padding-bottom: 20px;
+}
 
+.trust .bordered-slim {
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    padding: 20px 15px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 2px 15px 7px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 1px 2px 15px 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 1px 2px 15px 7px rgba(0, 0, 0, 0.21);
+    z-index: 1px;
+    height: 300px;
+    position: relative;
+}
+
+.trust-mobile {
+    margin: 15px 0;
+}
+
+.trust-mobile .bordered-slim {
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    padding: 20px 15px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 2px 15px 7px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 1px 2px 15px 7px rgba(0, 0, 0, 0.21);
+    box-shadow: 1px 2px 15px 7px rgba(0, 0, 0, 0.21);
+    z-index: 1px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.trust-mobile .custom-padding-bottom {
+    padding-bottom: 20px;
+}
+
+/** FIGURES SECTION **/
+
+.figures {
+    padding: 0 20px;
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    width: 100%;
+    z-index: 150;
+}
+
+.figures-mobile .row {
+    margin-bottom: 20px;
+}
+
+.figures .bordered, .figures-mobile .bordered{
     background-color: white;
     text-align: center;
     margin: auto;
@@ -282,7 +407,7 @@ p {
     overflow: auto;
     height: 220px;
     position: relative;
-    margin-top:60px;
+    color: #666666;
 }
 
 .figures .bordered .content{
@@ -390,6 +515,7 @@ p {
     opacity: 1;
     min-height: 200px;
     transition: min-height 0.5s ease;
+    margin-bottom: 30px;
 }
 
 .service-icons-description-container.active ul {
@@ -399,22 +525,6 @@ p {
 
 
 /** GLOBE **/
-
-.globe-container {
-    background-color: #0e5955;
-    position: relative;
-
-}
-
-.globe {
-    position: relative;
-    padding: 60px 60px 120px 60px;
-    color: white;
-    background: url("../images/world_map.png") no-repeat;
-    background-size: contain;
-    background-color: #0e5955;
-
-}
 
 .globe .text-content {
     position: relative;
@@ -460,19 +570,6 @@ p {
 }
 
 /** CLIENTS SECTION **/
-.clients .logo {
-    height: 150px;
-    /*can be anything*/
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.clients .logo-last-row {
-    height: 150px;
-    /*can be anything*/
-    position: relative;
-    margin-bottom: 10px;
-}
 
 .clients .logo img {
     max-height: 100%;
@@ -523,12 +620,6 @@ p {
 
 /**FOOTER **/
 
-footer {
-    background-color: black;
-    height: 50px;
-    color: white;
-    font-size: 1.3vw;
-}
 
 .footer-content {
     padding-top: 10px;
