@@ -221,7 +221,7 @@ p {
     margin-top: 60px;
 }
 
-.services, .clients, .request, .globe, .figures, .services-items {
+.services, .clients, .request, .globe, .services-items {
     position: relative;
     margin-bottom: 20px;
 }
@@ -246,14 +246,24 @@ p {
     margin-top: 30px;
 }
 
-.figures .abs{
-
+.figures {
+    border: 1px solid #000000;
     position: absolute;
-    top: -120px;
-    width: 100%;
-    left:0;
-    color: #666666;
+    margin-top: 10px;
+    margin-left: 0;
 
+}
+
+.figures .abs{
+    position: absolute;
+    /*top: -250px;*/
+    /*margin-top: 100px;*/
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+    /*left:0;*/
+    color: #666666;
+    background-color: grey;
 }
 
 .figures .bordered{
@@ -278,7 +288,6 @@ p {
 .figures .bordered .content{
     position: relative;
     bottom: 0px;
-
 }
 .relative{
     position: relative;
@@ -390,6 +399,12 @@ p {
 
 
 /** GLOBE **/
+
+.globe-container {
+    background-color: #0e5955;
+    position: relative;
+
+}
 
 .globe {
     position: relative;
