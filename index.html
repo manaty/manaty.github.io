@@ -97,6 +97,23 @@
 
 	<!-- END EXPERTS -->
 
+	<!-- Modal -->
+	<div class="modal fade" id="modalServices" tabindex="-1" role="dialog" aria-labelledby="serviceModalDialog" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="serviceTitle"></h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div id="serviceContent" class="modal-body">
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<!-- SERVICES -->
 	<section class="services-items">
 		<div class="container">
@@ -108,7 +125,7 @@
 			</div>
 		</div>
 		<div class="services-icons">
-			<div class="service-icons-container" data-title="Studies, conception & proofs of concept">
+			<div class="service-icons-container" data-title="Studies, conception & proofs of concept" data-toggle="modal" data-target="#modalServices">
 				<div class="icon" data-description="<p>  Manaty federates more than thirty specialists of software development around the world. Most of them are seniors with more than 10 years of experience with both technical and functional expertise in various fields (Java, JavaScript, PHP, Android, iOs; SQL and NoSQL, Reporting, data mining,  Cloud solutions…) and industries (Telecom, Media, Finance, Retail, Health…). </p>  <p> Some of our experts are PhD researchers that can offer their services and knowledge for your research and study needs. We can counsel you or even realize a complete and precise study on your subject.  </p>  <p>  We received a french certification for R&D studies that is valid until 2019 (certification CIR).</p>"
 				    data-title="Studies, conception & proofs of concept">
 					<img src="images/icon_software.png" alt="" class="img-responsive">
@@ -116,7 +133,7 @@
 				<h1> Company Software Development</h1>
 			</div>
 
-			<div class="service-icons-container" data-title="Website Development">
+			<div class="service-icons-container" data-title="Website Development" data-toggle="modal" data-target="#modalServices">
 				<div class="icon" data-description="<p>We are proficient in website development and web application development (B2C and B2B). </p>
 					  <p> Whether you want us to make your website from scratch or to update and improve an already existing website, we provide you with a turnkey solution focused on your business goals. We master all web languages and web technologies: Javascript, responsive CSS, PHP, JavaEE, all kinds of CMS and eShops…</p>
 					  <p> We can also develop tailor made web applications that will fulfill your needs. We use the latest technologies and standards :  REST API, SSO, SQL & NoSQL, asynchrone programming. </p>
@@ -133,7 +150,7 @@
 				<h1>Website Development</h1>
 			</div>
 
-			<div class="service-icons-container" data-title="Mobile Development">
+			<div class="service-icons-container" data-title="Mobile Development" data-toggle="modal" data-target="#modalServices">
 				<div class="icon" data-description="<p>We design and realize your mobile applications for all kinds of screens (smartphone and tablets), all mobile operating systems (Android, iOS, Windows mobile) and all purposes (general public applications for B2C and complex and precise applications for B2B).</p>
 				  <p>If that suits your business, we make sure that your mobile application easily adapt to any web browser on any screen. We are familiar with all interfaces,  any way of interacting (visual control, vocal control, interactive touch screen…) and the latest frameworks (Appcelerator, Cordova).</p>
 				  <p> We adapt to your project to :</p>
@@ -149,7 +166,7 @@
 				<h1>Mobile Development</h1>
 			</div>
 
-			<div class="service-icons-container" data-title="Desktop Development">
+			<div class="service-icons-container" data-title="Desktop Development" data-toggle="modal" data-target="#modalServices">
 				<div class="icon" data-title="Desktop Development" data-description="<p>Whether you need a standalone software for peer 2 peer communication (BitTorrent…), a blockchain processing (Bitcoins…) or an images/video processing, we can deliver multi-OS easy to deploy desktop applications.</p>
 				  <p>We adapt to your project to :</p>
 				  <ul>
@@ -164,14 +181,14 @@
 				<h1> Application Lifecyle Management </h1>
 			</div>
 
-			<div class="service-icons-container" data-title="Chatbot and AI">
+			<div class="service-icons-container" data-title="Chatbot and AI" data-toggle="modal" data-target="#modalServices">
 				<div class="icon" data-title="Chatbot and AI" data-description="<p>We help you with your AI solution for maximum operational effectiveness. We have a strong experience with deep learning and automation technologies. </p> <p> We can also counsel you for your chatbot solution and develop a customized entity that suits perfectly your business. </p>">
 					<img src="images/icon_chatbot.png" alt="" class="img-responsive">
 				</div>
 				<h1> Chatbot and AI </h1>
 			</div>
 
-			<div class="service-icons-container" data-title="Hosting and Support">
+			<div class="service-icons-container" data-title="Hosting and Support" data-toggle="modal" data-target="#modalServices">
 				<div class="icon" data-title="Hosting and Support" data-description="<p>Manaty can assess your needs and recommend the right service delivery model for specific systems and workloads. Then, we can migrate your applications and combine new cloud hosting and infrastructures with existing systems for a more manageable hybrid environment.</p>
                   <p> Our in-depth security strategies also streamline system and data protection for you. As a result, you can preserve existing investments and adopt new IT delivery models to support your business, and worry less about security. </p>
                   <p> Our experts love to work with : </p>
@@ -493,7 +510,7 @@
 					</div>
 					<div class="col-12 col-md-4">
 						<div class="form-group">
-							<input class="form-control" type="text" placeholder="Phone" name="phonenumber">							
+							<input class="form-control" type="text" placeholder="Phone" name="phonenumber">
 						</div>
 					</div>
 					<div class="col-12 col-md-4 d-none d-md-block">
@@ -521,7 +538,7 @@
 						<div class="row">
 							<div class="contact-info">
 								<div class='contact-info-row'>
-									<i class="material-icons">local_phone</i> +33 6 98 98 98
+									<i class="material-icons">local_phone</i> +33 6 17 43 71 17
 								</div>
 							</div>
 						</div>
@@ -537,7 +554,7 @@
 					<div class="col-12 col-md-4 d-none d-md-block">
 						<div class="row">
 							<div class='contact-info-row'>
-								<i class="fa fa-skype" style="font-size: 32px; color: #00AFF0;"></i> skypeID
+								<i class="fa fa-skype" style="font-size: 32px; color: #00AFF0;"></i> smichea
 							</div>
 						</div>
 						<div class="row">
@@ -549,25 +566,16 @@
 							</div>
 						</div>
 
-						<!--<div class="row">
-							<div class="col-md-5">
-								<script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-									<div id="SkypeButton_Call_skypeid_1">
-									 <script type="text/javascript">
-									 Skype.ui({
-									 "name": "chat",
-									 "element": "SkypeButton_Call_skypeid_1",
-									 "participants": ["skypeid"],
-									 "imageSize": 32
-									 });
-									 </script>
-								</div>
-							</div>
-						</div>-->
-
 					</div>
                 </div>
 				<div class="row">
+                    <div class="col-12 col-md-8 text-center">
+                        <button class="btn btn-custom primary center " type="submit" data-attach-loading > SEND </button>
+                    </div>
+					<div class="col-12 col-md-4 d-none  d-md-block">
+					</div>
+                </div>
+				<div class="row mt-4">
 					<div class="col-12 d-col-block d-md-none">
 						<h3 class="uppercase darkgreen">Contact</h3>
 					</div>
@@ -581,13 +589,13 @@
 					<div class="col-12 d-col-block d-md-none">
 						<div class="contact-info">
 							<div class='contact-info-row'>
-								<i class="material-icons">local_phone</i> +33 6 98 98 98
+								<i class="material-icons">local_phone</i> +33 6 17 43 71 17
 							</div>
 						</div>
 					</div>
 					<div class="col-12 d-col-block d-md-none">
 						<div class='contact-info-row'>
-							<i class="fa fa-skype" style="font-size: 32px; color: #00AFF0;"></i> skypeID
+							<i class="fa fa-skype" style="font-size: 32px; color: #00AFF0;"></i> smichea
 						</div>
 					</div>
 					<div class="col-12 d-col-block d-md-none mt-2">
@@ -599,13 +607,6 @@
 						</p>
 					</div>
 				</div>
-				<div class="row">
-                    <div class="col-12 col-md-8 text-center">
-                        <button class="btn btn-custom primary center " type="submit" data-attach-loading > SEND </button>
-                    </div>
-					<div class="col-12 col-md-4 d-none  d-md-block">
-					</div>
-                </div>
 			</form>
 		</div>
 	</section>
@@ -624,6 +625,8 @@
 		</div>
 	</footer>
 
+	<span class="skype-button bubble " data-contact-id="smichea"></span>
+	<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

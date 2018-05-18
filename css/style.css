@@ -455,9 +455,8 @@ p {
 }
 
 .service-icons-container .icon {
-    padding-top: 40px;
     border-radius: 150px;
-    background-color: #105050;
+    background-color: #808080;
     width: 150px;
     height: 150px;
     margin: 0 auto;
@@ -468,7 +467,7 @@ p {
 }
 
 .service-icons-container .icon:hover, .service-icons-container .icon.active {
-    background-color: #E3742A;
+    background-color: #105050;
 }
 
 .service-icons-container:after {
