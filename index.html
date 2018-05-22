@@ -567,8 +567,8 @@
         </div>
 	</section>
 	<!-- END CLIENTS SECTION -->
-	<!--<script type="text/javascript">var submitted=false;</script>
-	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {console.log('submitted: ' + submitted); window.location='http://www.google.com';}"></iframe>-->
+	<script type="text/javascript">var submitted=false;</script>
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location.href = window.location.href;}"></iframe>
 
 	<a name="contact"></a>
 	<section class="contactus" id="contactus">
@@ -576,18 +576,23 @@
 			<div class="text-container center help">
                 <h1 class="uppercase darkgreen"> Let's see how we can help you  </h1>
             </div>
-			<!--<form action="https://docs.google.com/forms/d/e/1FAIpQLSchd48oMy8B0wMaV9T5E645Hk_lqCAEMsAyH2cOeNUDUnNyPQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">-->
-			<form action="https://docs.google.com/forms/d/e/1FAIpQLSchd48oMy8B0wMaV9T5E645Hk_lqCAEMsAyH2cOeNUDUnNyPQ/formResponse">
+			<form action="https://docs.google.com/forms/d/e/1FAIpQLSchd48oMy8B0wMaV9T5E645Hk_lqCAEMsAyH2cOeNUDUnNyPQ/formResponse" method="post" target="hidden_iframe" accept-charset="UTF-8" onsubmit="validate()">
 				<div class="row">
 					<div class="col-12 col-md-4">
 						<div class="form-group">
-							<input class="form-control" type="text" name="entry.1588310062" placeholder="Full name *">
+							<input id="fullname" class="form-control" type="text" aria-describedby="fullnameBlock" name="entry.1588310062" placeholder="Full name *">
+							<small id="fullnameBlock" class="form-text text-muted red d-none">
+							  * Full name is required
+							</small>
 						</div>
 
 					</div>
 					<div class="col-12 col-md-4">
 						<div class="form-group">
-							<input class="form-control" type="text" placeholder="Email *" name="entry.1684797069">
+							<input id="email" class="form-control" type="text" aria-describedby="emailBlock" placeholder="Email *" name="entry.1684797069">
+							<small id="emailBlock" class="form-text text-muted red d-none">
+							  * Email is required
+							</small>
 						</div>
 					</div>
 					<div class="col-12 col-md-4 d-none d-md-block">
@@ -604,7 +609,7 @@
 					</div>
 					<div class="col-12 col-md-4">
 						<div class="form-group">
-							<input class="form-control" type="text" placeholder="Phone" name="phonenumber" name="entry.1083861874">
+							<input class="form-control" type="text" placeholder="Phone" name="entry.1083861874">
 						</div>
 					</div>
 					<div class="col-12 col-md-4 d-none d-md-block">
@@ -664,7 +669,7 @@
                 </div>
 				<div class="row">
                     <div class="col-12 col-md-8 text-center">
-                        <button class="btn btn-custom primary center " type="submit" data-attach-loading > SEND </button>
+                        <button class="btn btn-custom primary center " type="submit" > SEND </button>
                     </div>
 					<div class="col-12 col-md-4 d-none  d-md-block">
 					</div>

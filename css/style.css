@@ -293,6 +293,10 @@ p {
     color: #105050;
 }
 
+.red {
+    color: #ff0000 !important;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
