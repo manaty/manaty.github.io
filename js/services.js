@@ -33,7 +33,15 @@ $(function() {
         $("#serviceContent").html($(this).data('description'));
     });
 
+
 });
+
+function resetForms() {
+
+    document.getElementById("myForm").reset();
+    submitted = false;
+    alert('Thank you. Your request has been submitted.');
+}
 
 function validate() {
 
@@ -46,7 +54,7 @@ function validate() {
         $("#fullnameBlock").addClass('d-none');
     }
 
-    if(!$("#email").val()) {        
+    if(!$("#email").val()) {
         $("#emailBlock").removeClass('d-none');
         $("#emailBlock").addClass('d-block');
     }
@@ -59,5 +67,8 @@ function validate() {
          console.log('Do not submit. Full name and/or email is empty');
         return;
      }
-    submitted=true;
+     else {
+        submitted=true;
+     }
+
 }
