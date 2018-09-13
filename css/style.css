@@ -34,7 +34,7 @@
 
 footer {
     background-color: black;
-    height: 30px;
+    height: 50px;
     color: white;
     font-size: 10px;
 }
@@ -625,5 +625,18 @@ p {
 
 
 .footer-content {
-    padding-top: 10px;
+    /* padding-top: 10px; */
+}
+
+
+.flag {
+    opacity: 0.5;
+}
+
+.flag:hover {
+    opacity: 1;
+}
+
+.flag.selected {
+    opacity: 1;
 }
