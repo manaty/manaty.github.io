@@ -500,7 +500,7 @@ p {
     color: #105050;
 }
 
-.service-icons-description-container {    
+.service-icons-description-container {
     background-color: #0e5955;
     -webkit-transition-delay: left 0.1s ease;
     /* Safari */
@@ -510,6 +510,21 @@ p {
     color: white;
     min-height: 0px
 }
+
+/* fix for different color rendition in chrome and firefox */
+@-moz-document url-prefix() {
+    .service-icons-description-container {
+          background-color: #104F4B;
+     }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    .service-icons-description-container {
+        background-color: #0e5955;
+    }
+}
+
+
 
 .service-icons-description-container .row {
     margin: 0px;
