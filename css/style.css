@@ -263,7 +263,7 @@ p {
 }
 
 .text-container {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .padded-top {
@@ -412,6 +412,7 @@ p {
     height: 220px;
     position: relative;
     color: #666666;
+    overflow: hidden;
 }
 
 .figures .bordered .content{
@@ -499,8 +500,8 @@ p {
     color: #105050;
 }
 
-.service-icons-description-container {
-    background-color: #104F4B;
+.service-icons-description-container {    
+    background-color: #0e5955;
     -webkit-transition-delay: left 0.1s ease;
     /* Safari */
     transition: opacity 0.1s ease;
