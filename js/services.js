@@ -10,16 +10,17 @@ $(function() {
     $(".service-icons-container .icon").hover(
         function() {
             if (!isMobile) {
-                $(".service-icons-container .icon[data-title!='" + $(this).data('title') + "']").removeClass('active')
-                $(".service-icons-container .icon[data-title='" + $(this).data('title') + "']").addClass('active')
+                $(".service-icons-container .icon[data-title!='" + $(this).data('title') + "']").removeClass('active');
+                $(".service-icons-container .icon[data-title='" + $(this).data('title') + "']").addClass('active');
 
-                $(".service-icons-container[data-title='" + $(this).data('title') + "']").addClass('active')
-                $(".service-icons-container[data-title!='" + $(this).data('title') + "']").removeClass('active')
+                $(".service-icons-container[data-title='" + $(this).data('title') + "']").addClass('active');
+                $(".service-icons-container[data-title!='" + $(this).data('title') + "']").removeClass('active');
 
-                $('#service-competencies-title').html($(this).data('title'))
+                $('#service-competencies-title').html(replaceWithApostrophe($(this).data("title")));
                 $('#service-competencies-description').html($(this).data('description'))
                 $(".service-icons-description-container").addClass('active')
             }
+
 
 
         },
@@ -29,7 +30,7 @@ $(function() {
     );
 
     $(".service-icons-container .icon").click(function() {
-        $("#serviceTitle").text($(this).data('title'));
+        $("#serviceTitle").text(replaceWithApostrophe($(this).data("title")));
         $("#serviceContent").html($(this).data('description'));
     });
 
@@ -71,4 +72,10 @@ function validate() {
         submitted=true;
      }
 
+}
+
+
+
+function replaceWithApostrophe (str) {
+    return str.replace(/[#]/g, "'");
 }
