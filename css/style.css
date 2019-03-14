@@ -154,11 +154,12 @@ p.center {
 }
 
 .jumbotron.research {
-  background: url(../images/manaty_research_group_header.jpg ) no-repeat center center fixed;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
+  background: url(../images/manaty_research_group_header.jpg ) no-repeat top center fixed;
+  -webkit-background-size: 100% 55%;
+  -moz-background-size: 100% 55%;
+  -o-background-size: 100% 55%;
+  background-size: 100% 55%;
+  min-height: 50vh;
 }
 
 .jumbotron .text-banner-container {
@@ -523,6 +524,17 @@ p {
     padding: 20px;
     color: white;
     min-height: 0px
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .jumbotron.research {
+    background: url(../images/manaty_research_group_header.jpg ) no-repeat top center fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 50vh;
+  }
 }
 
 /* fix for different color rendition in chrome and firefox */
