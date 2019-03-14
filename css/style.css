@@ -153,6 +153,14 @@ p.center {
     text-shadow: 0px 1px 3px #000000;
 }
 
+.jumbotron.research {
+  background: url(../images/manaty_research_group_header.jpg ) no-repeat center center fixed;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
 .jumbotron .text-banner-container {
     margin-top: 10em;
 }
@@ -317,6 +325,12 @@ p {
     margin-bottom: 20px;
 }
 
+/** MISSION AND VISION **/
+
+.mission-vision {
+  margin-top: margin-top: 60px;
+}
+
 
 /** ROW BORDERED **/
 
@@ -456,7 +470,7 @@ p {
     text-align: center;
     margin: 5px;
     position: relative;
-    width: 190px;
+    width: 160px;
 }
 
 .service-icons-container .icon {
@@ -655,4 +669,42 @@ p {
 
 .flag.selected {
     opacity: 1;
+}
+
+/** MEMBERS **/
+
+.members {
+  margin-bottom: 40px;
+}
+
+.researcher-row {
+  margin-bottom: 20px;
+}
+
+.researcher-info-container {
+  font-size: 1.5em;
+  padding: 10px 15px;
+}
+
+.researcher-qualifications {
+  font-size: 1.2em;
+}
+
+.researcher-qualifications li {
+  margin: 15px 0;
+}
+
+.researcher-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.academic-papers {
+  margin-bottom: 5%;
+}
+
+.show-border {
+  border: 1px solid #000;
 }
