@@ -14,6 +14,40 @@
     margin-bottom: 5px;
 }
 
+.testimonials {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 10px 0;
+}
+
+.testimonials .logo {
+    height: 250px;
+    position: relative;
+    text-align: center;
+}
+
+.testimonials-name {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.testimonials .photo-container {
+  height: 120px;
+}
+
+.testimonials .photo {
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  position: relative;
+}
+
+.testimonials .testimonial-text {
+  font-size: 1.1em;
+  text-align: justify;
+  font-style: italic;
+}
+
 .services-items {
     margin-bottom: 10px;
 }
