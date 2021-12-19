@@ -78,6 +78,6 @@ function validate() {
 
 
 
-function replaceWithApostrophe (str) {
+function replaceWithApostrophe(str) {
     return str.replace(/[#]/g, "'");
 }
