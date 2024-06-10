@@ -28,6 +28,20 @@
 
 	<title>Manaty</title>
 
+	<style>
+		.spinner-border {
+		  display: none;
+		  width: 1.5rem;
+		  height: 1.5rem;
+		  border-width: 0.2em;
+		}
+		.btn-loading .spinner-border {
+		  display: inline-block;
+		}
+		.btn-loading .btn-text {
+		  display: none;
+		}
+	  </style>
 </head>
 
 <body>
@@ -600,23 +614,22 @@
 			<div class="text-container center help">
                 <h1 class="uppercase darkgreen"> Voyons comment nous pouvons vous aider  </h1>
             </div>
-
-			<form id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSchd48oMy8B0wMaV9T5E645Hk_lqCAEMsAyH2cOeNUDUnNyPQ/formResponse" method="post" target="hidden_iframe" accept-charset="UTF-8" onsubmit="validate()">
+			<form id="myForm" action="https://script.google.com/macros/s/AKfycbyQHiWPCkJ_Sdnpa0EG-xTCwLY5_2AzQ57XKUFrwA3WztFbQL-EyxXmFCfXDRzvvqf7OQ/exec" method="post" target="hidden_iframe" accept-charset="UTF-8" onsubmit="validate()">
 				<div class="row">
 					<div class="col-12 col-md-4">
 						<div class="form-group">
-							<input id="fullname" class="form-control" type="text" aria-describedby="fullnameBlock" name="entry.1588310062" placeholder="Nom *">
+							<input id="fullname" class="form-control" type="text" aria-describedby="fullnameBlock" name="name" placeholder="Nom *">
 							<small id="fullnameBlock" class="form-text text-muted red d-none">
-							  * Nom complet est requis
+							  * Nom requis
 							</small>
 						</div>
 
 					</div>
 					<div class="col-12 col-md-4">
 						<div class="form-group">
-							<input id="email" class="form-control" type="text" aria-describedby="emailBlock" placeholder="Email *" name="entry.1684797069">
+							<input id="email" class="form-control" type="text" aria-describedby="emailBlock" placeholder="Email *" name="email">
 							<small id="emailBlock" class="form-text text-muted red d-none">
-							  * Email est requis
+							  * Email requis
 							</small>
 						</div>
 					</div>
@@ -629,12 +642,12 @@
 				<div class="row">
 					<div class="col-12 col-md-4">
 						<div class="form-group">
-							<input class="form-control" type="text" placeholder="Entreprise*" name="entry.851180507">
+							<input class="form-control" type="text" placeholder="Company" name="company">
 						</div>
 					</div>
 					<div class="col-12 col-md-4">
 						<div class="form-group">
-							<input class="form-control" type="text" placeholder="Téléphone" name="entry.1083861874">
+							<input class="form-control" type="text" placeholder="Phone" name="phone">
 						</div>
 					</div>
 					<div class="col-12 col-md-4 d-none d-md-block">
@@ -650,19 +663,19 @@
 				<div class="row">
                     <div class="col-12 col-md-4">
                         <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Pays" name="entry.897519903">
+                            <input class="form-control" type="text" placeholder="Location" name="location">
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Skype" name="entry.1769045231">
+                            <input class="form-control" type="text" placeholder="Skype" name="skype">
                         </div>
                     </div>
 					<div class="col-12 col-md-4 d-none d-md-block">
 						<div class="row">
 							<div class="contact-info">
 								<div class='contact-info-row'>
-									<i class="material-icons">local_phone</i> +(33) 6 17 43 71 dix-sept
+									<i class="material-icons">local_phone</i> +(33) 6 17 43 71 seventeen
 								</div>
 							</div>
 						</div>
@@ -671,8 +684,7 @@
 				<div class="row">
                     <div class="col-12 col-md-8">
                         <div class="form-group">
-                            <textarea class="form-control" rows="10" placeholder="Message" name="entry.1301760924"></textarea>
-
+                            <textarea class="form-control" rows="10" placeholder="Message" name="message"></textarea>
                         </div>
                     </div>
 					<div class="col-12 col-md-4 d-none d-md-block">
@@ -689,7 +701,10 @@
                 </div>
 				<div class="row">
                     <div class="col-12 col-md-8 text-center">
-                        <button class="btn btn-custom primary center " type="submit" > ENVOYER </button>
+						<button id="submitButton" class="btn btn-custom primary center" type="submit">
+							<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+							<span class="btn-text">Envoyer</span>
+						  </button>
                     </div>
 					<div class="col-12 col-md-4 d-none  d-md-block">
 					</div>
@@ -708,7 +723,7 @@
 					<div class="col-12 d-col-block d-md-none">
 						<div class="contact-info">
 							<div class='contact-info-row'>
-								<i class="material-icons">local_phone</i> +(33) 6 17 43 71 dix-sept
+								<i class="material-icons">local_phone</i> +(33) 6 17 43 71 seventeen
 							</div>
 						</div>
 					</div>
@@ -730,7 +745,7 @@
 		<div class="container footer-content">
 			<div class="row">
 				<div class="col-6 col-md-10 text-left" style="margin-top:10px;">
-                    Copyright © 2021 Manaty
+                    Copyright © 2024 Manaty
                 </div>
                 <div class="col-3 col-md-1">
                     <a href="/en"><img class="flag" src="images/en.png" height="50px" width="50px"></a>

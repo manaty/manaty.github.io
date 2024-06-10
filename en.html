@@ -28,6 +28,20 @@
 
 	<title>Manaty</title>
 
+	<style>
+		.spinner-border {
+		  display: none;
+		  width: 1.5rem;
+		  height: 1.5rem;
+		  border-width: 0.2em;
+		}
+		.btn-loading .spinner-border {
+		  display: inline-block;
+		}
+		.btn-loading .btn-text {
+		  display: none;
+		}
+	  </style>
 </head>
 
 <body>
@@ -650,7 +664,10 @@
                 </div>
 				<div class="row">
                     <div class="col-12 col-md-8 text-center">
-                        <button class="btn btn-custom primary center " type="submit" > SEND </button>
+						<button id="submitButton" class="btn btn-custom primary center" type="submit">
+							<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+							<span class="btn-text">SEND</span>
+						  </button>
                     </div>
 					<div class="col-12 col-md-4 d-none  d-md-block">
 					</div>

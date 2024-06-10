@@ -43,6 +43,9 @@ function resetForms() {
 
     document.getElementById("myForm").reset();
     submitted = false;
+    const submitButton = document.getElementById('submitButton');
+    submitButton.classList.remove('btn-loading');
+    submitButton.disabled = false;
     alert('Thank you. Your request has been submitted.');
 }
 
@@ -67,11 +70,14 @@ function validate() {
     }
 
      if(!$("#email").val() || !$("#fullname").val()) {
-         console.log('Do not submit. Full name and/or email is empty');
+         alert('Full name and/or email is empty');
         return;
      }
      else {
         submitted=true;
+        const submitButton = document.getElementById('submitButton');
+        submitButton.classList.add('btn-loading');
+        submitButton.disabled = true;
      }
 
 }
